@@ -27,5 +27,8 @@ public class MainServlet extends HttpServlet{
 		cookie.setMaxAge(100 * 1000 * 60); //100 secondes
 		resp.addCookie(cookie);
 		
+		String filtreValue = (String)req.getAttribute("filter");
+		
+		System.out.println("FiltreValue: " + filtreValue);
 	}
 }
